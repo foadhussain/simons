@@ -10,7 +10,7 @@ h1{
 }
 h3{
 	font-family: 'Comfortaa', cursive;
-	color: #FFDF00;
+	color: #1464F4;
 	font-size:3rem;
 	text-align: center;
 	margin-top: 40px;
@@ -20,9 +20,15 @@ h2{
 	color: #FFDF00;
 	font-size:3rem;
 	text-align: center;
-
-
 }
+
+h4{
+	font-family: 'Comfortaa', cursive;
+	color: #FFF;
+	font-size:3rem;
+	text-align: center;
+}
+
 .button{
 	background-color: white;
 	height: 10vw;
