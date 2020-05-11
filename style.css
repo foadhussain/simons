@@ -76,14 +76,14 @@ h2{
 	h3{
 		font-family: 'Comfortaa', cursive;
 		color: #FFDF00;
-		font-size:1rem;
+		font-size:2rem;
 		text-align: center;
 		margin-top: 20px;
 	}
 	h2{
 		font-family: 'Comfortaa', cursive;
 		color: #FFDF00;
-		font-size:1rem;
+		font-size:2rem;
 		text-align: center;
 
 
@@ -95,7 +95,7 @@ h2{
 		border-radius: 20px;
 		border-width: 4px;
 		border-color: 	#FFDF00;
-		margin: 20px;
+		margin: 15px;
 	}
 
 	.heading{
