@@ -47,7 +47,7 @@ function correction(currentlevel){
         $("body").addClass("game-over");
         $("#level-title").text("GAME OVER :(");
         $("#again").text("your score: "+level);
-        $("#again2").text("reload").click(function(){
+        $("#again2").text("click to reload").click(function(){
             location.reload(true);
           });
         setTimeout(function(){
