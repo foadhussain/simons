@@ -6,6 +6,7 @@ var level = 0;
 var k = 0;
 
 
+
 $("h1").click(function(){
   k++;
   if(!start){
@@ -47,12 +48,14 @@ function correction(currentlevel){
         $("body").addClass("game-over");
         $("#level-title").text("GAME OVER :(");
         $("#again").text("your score: "+level);
-        $("#again2").text("click to reload").click(function(){
-            location.reload(true);
-          });
         setTimeout(function(){
           $("body").removeClass("game-over");
-        },400);
+        },200);
+        $("#again2").text("click to reload").click(function(){
+             location.reload(false);
+
+
+          });
 
 
       }
@@ -71,12 +74,14 @@ function correction(currentlevel){
   }
 
 
-  function animate(currentColor){
+  function animate(currentColor)
+  {
     $("#" + currentColor).addClass("pressed");
   setTimeout(function () {
     $("#" + currentColor).removeClass("pressed");
   }, 100);
   }
+
   function playsound(usercolor){
     var audio = new Audio("sounds/" + usercolor + ".mp3");
     audio.play();
