@@ -34,6 +34,16 @@ $(".btn").click(function(){
 })
 }
 
+function nextseq(){
+    userpattern=[];
+    level++;
+    $("#level-title").text("Level: " +level);
+    var random = Math.floor(Math.random()*4);
+    gamecolor = buttoncolours[random];
+    gamepattern.push(gamecolor);
+    playsound(gamecolor);
+    animate(gamecolor);
+  }
 
 function correction(currentlevel){
   if(gamepattern[currentlevel] === userpattern[currentlevel]){
@@ -62,16 +72,7 @@ function correction(currentlevel){
 
   }
 
-  function nextseq(){
-    userpattern=[];
-    level++;
-    $("#level-title").text("Level: " +level);
-    var random = Math.floor(Math.random()*4);
-    gamecolor = buttoncolours[random];
-    gamepattern.push(gamecolor);
-    playsound(gamecolor);
-    animate(gamecolor);
-  }
+  
 
 
   function animate(currentColor)
