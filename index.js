@@ -13,7 +13,7 @@ $("h1").click(function(){
     $("#at").hide();
     $("#ati").hide();
     $("a").hide();
-    $(".h1z").text("Level"+level);
+    $(".h1z").text("Score: "+level);
     nextseq();
     start=true;
 
